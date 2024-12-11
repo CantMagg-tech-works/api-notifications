@@ -3,6 +3,7 @@ package api_notifications.dtos;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.Map;
 import lombok.AllArgsConstructor;
@@ -16,7 +17,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class SendHtmlRequest implements Serializable {
 
-  @NotEmpty
+  @NotNull
   private Integer id;
   @NotBlank
   @Email

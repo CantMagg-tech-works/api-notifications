@@ -22,6 +22,8 @@ public class EmailTemplateServiceImp implements EmailTemplateService {
   private final EmailTemplateRepository emailTemplateRepository;
 
 
+
+
   @Override
   @SneakyThrows
   public String sendEmail(SendHtmlRequest sendHtmlRequest) {
@@ -40,6 +42,4 @@ public class EmailTemplateServiceImp implements EmailTemplateService {
 
     return NotificationsMessages.NOTI_MESS_0001.getDescription();
   }
-
-
 }
