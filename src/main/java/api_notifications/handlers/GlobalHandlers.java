@@ -1,4 +1,4 @@
-package api_notifications.Handlers;
+package api_notifications.handlers;
 
 
 import api_commons.response.ErrorCommons;
